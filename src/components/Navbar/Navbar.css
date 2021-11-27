@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px)
+{
+    .hidemobileScreen{
+    display: none;
+}}
+.mobilehome-logo-only {
+    display: none;
+}
+@media (max-width: 768px)
+{
+.mobilehome-logo-only {
+    position: absolute;
+    top: 0;
+    padding: 17px 0;
+    display: block;
+    background: #fff;
+    left: 14px;
+}}
+

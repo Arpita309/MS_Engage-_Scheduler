@@ -1,0 +1,193 @@
+.createBtn{
+    display: block;
+    padding: 8px 26px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #dddce7;
+    background:#e8505b ;
+    text-decoration: none;
+    position: relative;
+    z-index: 96;
+    
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    width: 155px;
+    font-weight: 700;
+    top:30px;
+    left:270px;
+    font-family:cursive ;
+    display: flex;
+}
+.loginoverlay{
+    
+        width: calc(100% - 900px);
+        background: #fff;
+        border-radius: 20px;
+        text-align: center;
+    
+}
+ul {
+    margin: 10px;
+    padding: 0;
+  }
+  ul li {
+    display: block;
+    margin: 15px 0;
+    position: relative;
+    list-style-type: none;
+  }
+  @media only screen and (max-width: 768px)
+  {
+   ul li {
+    margin: 10px 0;
+  }}
+
+  ul li .field-labels {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0,0,0,.7);
+    margin: 0 0 10px;
+    font-family: cursive;
+  }
+  ul li .errorMsgBox {
+    float: right;
+    height: 22px;
+    min-width: 10px;
+    margin: 0 0 4px;
+  }
+  ul li input {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    height: 52px;
+    border-radius: 3px;
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+    padding: 0 13px;
+  }
+  
+  @media only screen and (max-width: 768px)
+{
+ ul li input {
+  font-size: 14px;
+  height: 42px;
+}}
+ul li .results-list {
+    position: absolute;
+    z-index: 9;
+    top: 81px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.1);
+  }
+  @media only screen and (max-width: 768px)
+{
+ ul li .results-list {
+  top: 71px;
+}}
+ul li .results-list ol {
+    margin: 0;
+    padding: 0;
+  }
+  ul li .results-list ol li {
+    display: block;
+    list-style-type: none;
+    padding: 5px;
+    cursor: pointer;
+    margin: 0;
+    font-size: 13px;
+  }
+  ul li .submitButton {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 100%;
+    height: 52px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    padding: 8px 10px;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 8px 15px #eb3b47;
+    border-radius: 3px;
+    background-color: #e8505b;
+    overflow: hidden;
+  }
+  ul li .extraSpace {
+    margin-top: 25px;
+  }
+  @media only screen and (max-width: 768px)
+  {
+  ul li .submitButton {
+    float: left;
+    height: 42px;
+  }}
+  ul li .submitButton:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.25);
+    transition: all .3s ease-in-out;
+  }
+  ul li .submitButton.errorAnimation:before {
+    opacity: 0;
+    -webkit-animation: erroranimation .5s ease-in-out;
+    animation: erroranimation .5s ease-in-out;
+  }
+  ul li .extraText {
+    display: inline-block;
+    font-size: 13px;
+    color: rgba(0,0,0,.54);
+    vertical-align: middle;
+    margin: 20px 0 40px;
+    width: 100%;
+    text-align: center;
+  }
+  @media only screen and (max-width: 768px)
+{
+.loginRegister .loginRegisterRight .loginRegisterForm ul li .extraText {
+  margin: 15px 0 20px;
+}}
+fieldset, legend {
+    padding: 0;
+    border: 0;
+  }
+  legend {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  ul li .enteredEmail {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    color: #ffb80e;
+    height: 52px;
+    border-radius: 3px;
+    border: 2px solid #ffb80e;
+    background-color: #fffbe8;
+    padding: 10px;
+    display: inline-block;
+  }
+  ul li .redBorder input,  ul li input:focus.ng-invalid {
+    border: 1px solid #e8505b;
+  }
+
+
+
+
