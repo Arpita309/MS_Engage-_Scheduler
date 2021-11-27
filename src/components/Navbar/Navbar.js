@@ -26,7 +26,7 @@ export default class Navbar extends React.Component {
           <nav id='header'>
             <div className='container-fluid'>
               <div className="logo">
-                <img width="107" height="107" alt="" className="mainLogo" src="https://microsoft.acehacker.com/fte2021/img/demo-content/images/scheduler.png"></img>
+               <Link to="/"> <img width="107" height="107" alt="" className="mainLogo" src="https://microsoft.acehacker.com/fte2021/img/demo-content/images/scheduler.png"></img></Link>
                 <LoginIcon/>
                 {user!==null?<User/>:''}
               </div>

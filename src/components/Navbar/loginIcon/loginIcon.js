@@ -112,9 +112,8 @@ class LoginIcon extends React.Component{
               </div>
             </div>
         </div>}
-        {user!==null?'':
-        <div className="loginPanel" >
-          <Tool/>
+        {user!==null?'':<div className="loginPanel" >
+                <Tool/>
          </div>}  
                 
       </div>
