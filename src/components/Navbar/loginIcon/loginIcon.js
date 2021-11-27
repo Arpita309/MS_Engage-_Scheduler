@@ -79,17 +79,14 @@ class LoginIcon extends React.Component{
           <em onClick={this.togglePopUp}  ><i className="far fa-user " style={{color:'white',top:'-100px'}}></i></em>
         </div>
         {user!==null?
-          <div className='mobNavigation active'>
+          <div className={`mobNavigation ${this.state.mobNavigation?'active':''}`}>
             <div className="mobOverlay"></div>
             <div className="menuBox">
-              <div className="closeNav" onClick={this.closeMobNavigation}><em className="icon-close"></em></div>
+              <div className="closeNav" onClick={this.closeMobNavigation}><em className="icon-close">X</em></div>
               <div>
                 <div className="welcomeUser"> Hello, <strong>{user.displayName}</strong></div>
                 <ul className="mobile-loginscreen">
-                  <li><span className="userSetting"><em className="icon-settings-streamline-1"></em> Settings</span></li>
-                  <li className="mydashBoard"><span>
-                    <em class="icon-dashboard-3"></em> Go to Dashboard</span>
-                  </li>
+                  
                   <li>
                     <span className="userLogout" ><em className="icon-logout-1"></em><button onClick={() => logout()}>  Log Out</button></span>
                   </li>

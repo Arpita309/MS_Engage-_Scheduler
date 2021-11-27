@@ -86,3 +86,4 @@ export {
   registerWithEmailAndPassword,
   logout
 };
+

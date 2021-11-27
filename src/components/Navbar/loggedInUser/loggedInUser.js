@@ -18,7 +18,7 @@ class User extends React.Component{
     render(){
         return(
             <div className="userPanel">
-                <h3> Hello <strong onClick={()=>this.setState({active:!this.state.active})}>{loggedIn?loggedIn.displayName.split(" ")[0] :''}</strong></h3>
+                <h3> Hello <strong onClick={()=>this.setState({active:!this.state.active})}>{loggedIn?loggedIn.displayName:''}</strong></h3>
                 <div className={`userDropdown ${this.state.active?'active':''}`} style={{zIndex:'2'}}>
                     <ul>
                         <li><button onClick={() => logout()}>  Log Out</button></li>
